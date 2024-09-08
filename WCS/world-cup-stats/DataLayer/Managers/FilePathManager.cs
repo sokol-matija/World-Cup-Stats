@@ -19,7 +19,7 @@ namespace DataLayer.Managers
 		public static void Initialize()
 		{
 			string solutionDirectory = FindSolutionDirectory();
-			_assetsPath = Path.Combine(solutionDirectory, "DataLayer_v2", "Assets");
+			_assetsPath = Path.Combine(solutionDirectory, "DataLayer", "Assets");
 
 			if (!Directory.Exists(_assetsPath))
 			{
@@ -32,7 +32,7 @@ namespace DataLayer.Managers
 			string currentDir = AppDomain.CurrentDomain.BaseDirectory;
 			while (currentDir != null)
 			{
-				if (File.Exists(Path.Combine(currentDir, "WorldCupStats.sln")))
+				if (File.Exists(Path.Combine(currentDir, "world-cup-stats.sln")))
 				{
 					return currentDir;
 				}
