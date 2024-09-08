@@ -1,0 +1,33 @@
+[
+	{
+		"DataSourceType": "api",
+		"Championship": "men",
+		"Language": "hr",
+		"FavoriteTeamMen": "CRO",
+		"FavoriteTeamWomen": "USA",
+		"FavoritePlayers": {
+			"men": {
+				"AUS": [
+					"Mathew RYAN",
+					"Mark MILLIGAN"
+				],
+				"ARG": [
+					"Lucas BIGLIA",
+					"Nicolas TAGLIAFICO",
+					"Wilfredo CABALLERO"
+				],
+				"SRB": [
+				],
+				"GER": [
+					"JO Hyeonwoo"
+				],
+				"CRO": [
+					"Luka Modric",
+					"Ivan Perisic"
+				]
+			},
+			"women": {
+			}
+		}
+	}
+]
