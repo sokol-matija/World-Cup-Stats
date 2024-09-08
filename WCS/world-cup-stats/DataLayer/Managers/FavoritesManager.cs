@@ -1,4 +1,6 @@
 ﻿using DataLayer.Interfaces;
+using DataLayer.Models;
+using DataLayer.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,10 +12,13 @@ namespace DataLayer.Managers
 	public class FavoritesManager : IFavoritesManager
 	{
 		private readonly ISettingsManager _settingsManager;
+		private readonly Settings _settings;
 
 		public FavoritesManager(ISettingsManager settingsManager)
 		{
 			_settingsManager = settingsManager ?? throw new ArgumentNullException(nameof(settingsManager));
+			_settings = settingsManager.GetSettingsAsync().GetAwaiter().GetResult();
+			LoggingService.Log("FavoritesManager initialized");
 		}
 
 		public async Task<List<string>> GetFavoritePlayersAsync(string gender, string teamCode)

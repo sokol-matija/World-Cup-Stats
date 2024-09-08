@@ -4,14 +4,14 @@ using DataLayer.Services;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace DataLayer.Managers
 {
 	public class SettingsManager : ISettingsManager
 	{
+		public bool IsFirstRun { get; private set; }
+
 		public SettingsManager()
 		{
 		}
@@ -24,13 +24,15 @@ namespace DataLayer.Managers
 				string json = await File.ReadAllTextAsync(FilePathManager.GetSettingsPath());
 				var settings = JsonConvert.DeserializeObject<Settings>(json);
 				LoggingService.Log("Settings loaded successfully");
+				IsFirstRun = false;
 				return settings;
 			}
 			else
 			{
-				LoggingService.Log("Settings file not found. Creating new settings file.");
+				LoggingService.Log("Settings file not found. Creating default settings.");
 				var defaultSettings = CreateDefaultSettings();
 				await SaveSettingsAsync(defaultSettings);
+				IsFirstRun = true;
 				return defaultSettings;
 			}
 		}
@@ -50,7 +52,7 @@ namespace DataLayer.Managers
 			{
 				Championship = "men",
 				Language = "en",
-				DataSourceType = "api", // or "json", depending on your default preference
+				DataSourceType = "api",
 				FavoriteTeamMen = "",
 				FavoriteTeamWomen = "",
 				FavoritePlayers = new Dictionary<string, Dictionary<string, List<string>>>
@@ -60,7 +62,5 @@ namespace DataLayer.Managers
 				}
 			};
 		}
-
-
 	}
 }

@@ -77,6 +77,7 @@
 			btnSave.TabIndex = 4;
 			btnSave.Text = "Save";
 			btnSave.UseVisualStyleBackColor = true;
+			btnSave.Click += btnSave_Click;
 			// 
 			// SettingsForm
 			// 
@@ -91,7 +92,9 @@
 			MaximizeBox = false;
 			MinimizeBox = false;
 			Name = "SettingsForm";
+			StartPosition = FormStartPosition.CenterScreen;
 			Text = "Settings";
+			Load += SettingsForm_Load;
 			ResumeLayout(false);
 			PerformLayout();
 		}

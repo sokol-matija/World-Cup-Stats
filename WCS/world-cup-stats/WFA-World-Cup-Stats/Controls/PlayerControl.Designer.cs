@@ -31,7 +31,7 @@
 			lblName = new Label();
 			lblNumber = new Label();
 			lblPosition = new Label();
-			cbCaptain = new CheckBox();
+			chkCaptain = new CheckBox();
 			picFavorite = new PictureBox();
 			picPlayer = new PictureBox();
 			((System.ComponentModel.ISupportInitialize)picFavorite).BeginInit();
@@ -65,15 +65,15 @@
 			lblPosition.TabIndex = 2;
 			lblPosition.Text = "label3";
 			// 
-			// cbCaptain
+			// chkCaptain
 			// 
-			cbCaptain.AutoSize = true;
-			cbCaptain.Location = new Point(16, 122);
-			cbCaptain.Name = "cbCaptain";
-			cbCaptain.Size = new Size(110, 34);
-			cbCaptain.TabIndex = 3;
-			cbCaptain.Text = "Captain";
-			cbCaptain.UseVisualStyleBackColor = true;
+			chkCaptain.AutoSize = true;
+			chkCaptain.Location = new Point(16, 122);
+			chkCaptain.Name = "chkCaptain";
+			chkCaptain.Size = new Size(110, 34);
+			chkCaptain.TabIndex = 3;
+			chkCaptain.Text = "Captain";
+			chkCaptain.UseVisualStyleBackColor = true;
 			// 
 			// picFavorite
 			// 
@@ -97,7 +97,7 @@
 			AutoScaleMode = AutoScaleMode.Font;
 			Controls.Add(picPlayer);
 			Controls.Add(picFavorite);
-			Controls.Add(cbCaptain);
+			Controls.Add(chkCaptain);
 			Controls.Add(lblPosition);
 			Controls.Add(lblNumber);
 			Controls.Add(lblName);
@@ -114,7 +114,7 @@
 		private Label lblName;
 		private Label lblNumber;
 		private Label lblPosition;
-		private CheckBox cbCaptain;
+		private CheckBox chkCaptain;
 		private PictureBox picFavorite;
 		private PictureBox picPlayer;
 	}

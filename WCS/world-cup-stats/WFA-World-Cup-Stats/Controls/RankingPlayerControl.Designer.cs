@@ -30,8 +30,8 @@
 		{
 			lblName = new Label();
 			lblCount = new Label();
-			pictureBox1 = new PictureBox();
-			((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+			picPlayer = new PictureBox();
+			((System.ComponentModel.ISupportInitialize)picPlayer).BeginInit();
 			SuspendLayout();
 			// 
 			// lblName
@@ -52,24 +52,24 @@
 			lblCount.TabIndex = 1;
 			lblCount.Text = "label2";
 			// 
-			// pictureBox1
+			// picPlayer
 			// 
-			pictureBox1.Location = new Point(172, 7);
-			pictureBox1.Name = "pictureBox1";
-			pictureBox1.Size = new Size(96, 88);
-			pictureBox1.TabIndex = 2;
-			pictureBox1.TabStop = false;
+			picPlayer.Location = new Point(172, 7);
+			picPlayer.Name = "picPlayer";
+			picPlayer.Size = new Size(96, 88);
+			picPlayer.TabIndex = 2;
+			picPlayer.TabStop = false;
 			// 
 			// RankingPlayerControl
 			// 
 			AutoScaleDimensions = new SizeF(12F, 30F);
 			AutoScaleMode = AutoScaleMode.Font;
-			Controls.Add(pictureBox1);
+			Controls.Add(picPlayer);
 			Controls.Add(lblCount);
 			Controls.Add(lblName);
 			Name = "RankingPlayerControl";
 			Size = new Size(271, 98);
-			((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+			((System.ComponentModel.ISupportInitialize)picPlayer).EndInit();
 			ResumeLayout(false);
 			PerformLayout();
 		}
@@ -78,6 +78,6 @@
 
 		private Label lblName;
 		private Label lblCount;
-		private PictureBox pictureBox1;
+		private PictureBox picPlayer;
 	}
 }

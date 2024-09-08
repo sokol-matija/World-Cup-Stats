@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DataLayer.Services;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -18,11 +19,13 @@ namespace DataLayer.Managers
 
 		public static void Initialize()
 		{
+			LoggingService.Log("Initializing FilePathManager");
 			string solutionDirectory = FindSolutionDirectory();
 			_assetsPath = Path.Combine(solutionDirectory, "DataLayer", "Assets");
-
+			LoggingService.Log($"Assets directory: {_assetsPath}");
 			if (!Directory.Exists(_assetsPath))
 			{
+				LoggingService.Log("Assets directory not found");
 				throw new DirectoryNotFoundException($"Assets directory not found at: {_assetsPath}");
 			}
 		}

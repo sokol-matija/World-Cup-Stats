@@ -28,20 +28,20 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			lblTeam = new Label();
+			lblTeams = new Label();
 			lblLocation = new Label();
 			lblScore = new Label();
-			lblAtendance = new Label();
+			lblAttendance = new Label();
 			SuspendLayout();
 			// 
-			// lblTeam
+			// lblTeams
 			// 
-			lblTeam.AutoSize = true;
-			lblTeam.Location = new Point(21, 13);
-			lblTeam.Name = "lblTeam";
-			lblTeam.Size = new Size(68, 30);
-			lblTeam.TabIndex = 0;
-			lblTeam.Text = "label1";
+			lblTeams.AutoSize = true;
+			lblTeams.Location = new Point(21, 13);
+			lblTeams.Name = "lblTeams";
+			lblTeams.Size = new Size(68, 30);
+			lblTeams.TabIndex = 0;
+			lblTeams.Text = "label1";
 			// 
 			// lblLocation
 			// 
@@ -61,23 +61,23 @@
 			lblScore.TabIndex = 2;
 			lblScore.Text = "label3";
 			// 
-			// lblAtendance
+			// lblAttendance
 			// 
-			lblAtendance.AutoSize = true;
-			lblAtendance.Location = new Point(218, 54);
-			lblAtendance.Name = "lblAtendance";
-			lblAtendance.Size = new Size(68, 30);
-			lblAtendance.TabIndex = 3;
-			lblAtendance.Text = "label4";
+			lblAttendance.AutoSize = true;
+			lblAttendance.Location = new Point(218, 54);
+			lblAttendance.Name = "lblAttendance";
+			lblAttendance.Size = new Size(68, 30);
+			lblAttendance.TabIndex = 3;
+			lblAttendance.Text = "label4";
 			// 
 			// MatchControl
 			// 
 			AutoScaleDimensions = new SizeF(12F, 30F);
 			AutoScaleMode = AutoScaleMode.Font;
-			Controls.Add(lblAtendance);
+			Controls.Add(lblAttendance);
 			Controls.Add(lblScore);
 			Controls.Add(lblLocation);
-			Controls.Add(lblTeam);
+			Controls.Add(lblTeams);
 			Name = "MatchControl";
 			Size = new Size(422, 93);
 			ResumeLayout(false);
@@ -86,9 +86,9 @@
 
 		#endregion
 
-		private Label lblTeam;
+		private Label lblTeams;
 		private Label lblLocation;
 		private Label lblScore;
-		private Label lblAtendance;
+		private Label lblAttendance;
 	}
 }

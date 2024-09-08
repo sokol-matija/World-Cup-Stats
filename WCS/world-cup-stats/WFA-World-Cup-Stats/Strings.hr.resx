@@ -118,63 +118,63 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AddToFavorites" xml:space="preserve">
-    <value>Add To Favorites</value>
+    <value>Dodaj u favorite</value>
   </data>
   <data name="AllPlayers" xml:space="preserve">
-    <value>All Players</value>
+    <value>Svi Igraci</value>
   </data>
   <data name="Capitain" xml:space="preserve">
-    <value>Capitain</value>
+    <value>Kapetan</value>
   </data>
   <data name="ChooseTeam" xml:space="preserve">
-    <value>ChooseTeam</value>
+    <value>Izaberi tim</value>
   </data>
   <data name="Deselect" xml:space="preserve">
-    <value>Deselect</value>
+    <value>Odznaci</value>
   </data>
   <data name="Error" xml:space="preserve">
-    <value>Error</value>
+    <value>Pogreska</value>
   </data>
   <data name="FavoritePlayers" xml:space="preserve">
-    <value>Favorite Players</value>
+    <value>Najdrazi igraci</value>
   </data>
   <data name="MainFormTitle" xml:space="preserve">
-    <value>World Cup Statistics</value>
+    <value>Svjetsko prvenstvo statistika</value>
   </data>
   <data name="Matches" xml:space="preserve">
-    <value>Matches</value>
+    <value>Utakmice</value>
   </data>
   <data name="MoveToFavorites" xml:space="preserve">
-    <value>Move To Favorites</value>
+    <value>Prebaci u favorite</value>
   </data>
   <data name="Number" xml:space="preserve">
-    <value>Number</value>
+    <value>Broj</value>
   </data>
   <data name="PlayerPosition" xml:space="preserve">
-    <value>Player Position</value>
+    <value>Pozicija Igraca</value>
   </data>
   <data name="Print" xml:space="preserve">
-    <value>Print</value>
+    <value>Pirntaj</value>
   </data>
   <data name="PrintStatistics" xml:space="preserve">
-    <value>Print Statistics</value>
+    <value>Printaj Statistiku</value>
   </data>
   <data name="RemoveFromFavorites" xml:space="preserve">
-    <value>Remove From Favorites</value>
+    <value>Ukloni iz favorita</value>
   </data>
   <data name="Select" xml:space="preserve">
-    <value>Select</value>
+    <value>Oznaci</value>
   </data>
   <data name="SetPlayerImage" xml:space="preserve">
-    <value>Set Player Image</value>
+    <value>Postavi Sliku Igraca</value>
   </data>
   <data name="Settings" xml:space="preserve">
-    <value>Settings</value>
+    <value>Postavke</value>
   </data>
   <data name="TopScorers" xml:space="preserve">
-    <value>Top Scorers</value>
+    <value>Najvise Golova</value>
   </data>
   <data name="YellowCards" xml:space="preserve">
-    <value>Yellow Cards</value>
+    <value>Zuti kartoni</value>
   </data>
 </root>

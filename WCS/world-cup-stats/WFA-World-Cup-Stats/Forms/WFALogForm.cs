@@ -20,6 +20,10 @@ namespace WFA_World_Cup_Stats.Forms
 			InitializeComponent();
 			InitializeLogListBox();
 			LoggingService.LogAdded += OnLogAdded;
+
+			this.Size = new Size(600, 600);
+			this.Text = "Log Window";
+			this.StartPosition = FormStartPosition.CenterScreen;
 		}
 
 		private void InitializeLogListBox()

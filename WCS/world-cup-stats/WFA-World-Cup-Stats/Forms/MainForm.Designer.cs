@@ -34,13 +34,13 @@
 			mnuPrint = new ToolStripMenuItem();
 			mnuPrintStatistics = new ToolStripMenuItem();
 			lblChooseTeam = new Label();
-			cmbTeam = new ComboBox();
+			cmbTeams = new ComboBox();
 			lblAllPlayers = new Label();
 			lblFavoritePlayers = new Label();
 			lblTopScorers = new Label();
 			lblYellowCards = new Label();
 			lblMatches = new Label();
-			panel1 = new Panel();
+			pnlAllPlayers = new Panel();
 			pnlFavoritePlayers = new Panel();
 			pnlTopScorers = new Panel();
 			pnlYellowCards = new Panel();
@@ -68,6 +68,7 @@
 			mnuSettings.Name = "mnuSettings";
 			mnuSettings.Size = new Size(105, 34);
 			mnuSettings.Text = "Settings";
+			mnuSettings.Click += mnuSettings_Click;
 			// 
 			// mnuPrint
 			// 
@@ -91,13 +92,13 @@
 			lblChooseTeam.TabIndex = 1;
 			lblChooseTeam.Text = "Choose Team";
 			// 
-			// cmbTeam
+			// cmbTeams
 			// 
-			cmbTeam.FormattingEnabled = true;
-			cmbTeam.Location = new Point(27, 89);
-			cmbTeam.Name = "cmbTeam";
-			cmbTeam.Size = new Size(212, 38);
-			cmbTeam.TabIndex = 2;
+			cmbTeams.FormattingEnabled = true;
+			cmbTeams.Location = new Point(27, 89);
+			cmbTeams.Name = "cmbTeams";
+			cmbTeams.Size = new Size(212, 38);
+			cmbTeams.TabIndex = 2;
 			// 
 			// lblAllPlayers
 			// 
@@ -144,12 +145,12 @@
 			lblMatches.TabIndex = 7;
 			lblMatches.Text = "Matches";
 			// 
-			// panel1
+			// pnlAllPlayers
 			// 
-			panel1.Location = new Point(33, 188);
-			panel1.Name = "panel1";
-			panel1.Size = new Size(343, 257);
-			panel1.TabIndex = 8;
+			pnlAllPlayers.Location = new Point(33, 188);
+			pnlAllPlayers.Name = "pnlAllPlayers";
+			pnlAllPlayers.Size = new Size(343, 257);
+			pnlAllPlayers.TabIndex = 8;
 			// 
 			// pnlFavoritePlayers
 			// 
@@ -223,17 +224,18 @@
 			Controls.Add(pnlYellowCards);
 			Controls.Add(pnlTopScorers);
 			Controls.Add(pnlFavoritePlayers);
-			Controls.Add(panel1);
+			Controls.Add(pnlAllPlayers);
 			Controls.Add(lblMatches);
 			Controls.Add(lblYellowCards);
 			Controls.Add(lblTopScorers);
 			Controls.Add(lblFavoritePlayers);
 			Controls.Add(lblAllPlayers);
-			Controls.Add(cmbTeam);
+			Controls.Add(cmbTeams);
 			Controls.Add(lblChooseTeam);
 			Controls.Add(menuStrip);
 			MainMenuStrip = menuStrip;
 			Name = "MainForm";
+			StartPosition = FormStartPosition.CenterScreen;
 			Text = "World Cup Statistics";
 			menuStrip.ResumeLayout(false);
 			menuStrip.PerformLayout();
@@ -243,26 +245,26 @@
 
 		#endregion
 
-		private MenuStrip menuStrip;
-		private ToolStripMenuItem mnuSettings;
-		private ToolStripMenuItem mnuPrint;
-		private ToolStripMenuItem mnuPrintStatistics;
-		private Label lblChooseTeam;
-		private ComboBox cmbTeam;
-		private Label lblAllPlayers;
-		private Label lblFavoritePlayers;
-		private Label lblTopScorers;
-		private Label lblYellowCards;
-		private Label lblMatches;
-		private Panel panel1;
-		private Panel pnlFavoritePlayers;
-		private Panel pnlTopScorers;
-		private Panel pnlYellowCards;
-		private Panel pnlMatches;
+		public MenuStrip menuStrip;
+		public ToolStripMenuItem mnuSettings;
+		public ToolStripMenuItem mnuPrint;
+		public ToolStripMenuItem mnuPrintStatistics;
+		public Label lblChooseTeam;
+		public ComboBox cmbTeams;
+		public Label lblAllPlayers;
+		public Label lblFavoritePlayers;
+		public Label lblTopScorers;
+		public Label lblYellowCards;
+		public Label lblMatches;
+		public Panel pnlAllPlayers;
+		public Panel pnlFavoritePlayers;
+		public Panel pnlTopScorers;
+		public Panel pnlYellowCards;
+		public Panel pnlMatches;
 		public PrintDialog printDialog;
 		public System.Drawing.Printing.PrintDocument printDocument;
 		public PrintPreviewDialog printPreviewDialog;
-		private Button btnMoveToFavorites;
+		public Button btnMoveToFavorites;
 		private StatusStrip statusStrip;
 	}
 }

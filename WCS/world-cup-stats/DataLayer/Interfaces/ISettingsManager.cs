@@ -9,6 +9,7 @@ namespace DataLayer.Interfaces
 {
 	public interface ISettingsManager
 	{
+		bool IsFirstRun { get; }
 		Task<Settings> GetSettingsAsync();
 		Task SaveSettingsAsync(Settings settings);
 	}

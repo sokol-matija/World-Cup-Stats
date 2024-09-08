@@ -1,6 +1,7 @@
 ﻿using DataLayer.Interfaces;
 using DataLayer.Models;
 using DataLayer.Providers;
+using DataLayer.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,6 +15,7 @@ namespace DataLayer.Factory
 		public static IDataProvider CreateDataProvider(ISettingsManager settingsManager)
 		{
 			Settings settings = settingsManager.GetSettingsAsync().GetAwaiter().GetResult();
+			LoggingService.Log($"Creating data provider of type: {settings.DataSourceType}");
 			return settings.DataSourceType.ToLower() switch
 			{
 				"api" => new ApiDataProvider(),

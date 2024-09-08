@@ -59,5 +59,185 @@ namespace WFA_World_Cup_Stats {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Add To Favorites.
+        /// </summary>
+        internal static string AddToFavorites {
+            get {
+                return ResourceManager.GetString("AddToFavorites", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to All Players.
+        /// </summary>
+        internal static string AllPlayers {
+            get {
+                return ResourceManager.GetString("AllPlayers", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Capitain.
+        /// </summary>
+        internal static string Capitain {
+            get {
+                return ResourceManager.GetString("Capitain", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ChooseTeam.
+        /// </summary>
+        internal static string ChooseTeam {
+            get {
+                return ResourceManager.GetString("ChooseTeam", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Deselect.
+        /// </summary>
+        internal static string Deselect {
+            get {
+                return ResourceManager.GetString("Deselect", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Error.
+        /// </summary>
+        internal static string Error {
+            get {
+                return ResourceManager.GetString("Error", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Favorite Players.
+        /// </summary>
+        internal static string FavoritePlayers {
+            get {
+                return ResourceManager.GetString("FavoritePlayers", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to World Cup Statistics.
+        /// </summary>
+        internal static string MainFormTitle {
+            get {
+                return ResourceManager.GetString("MainFormTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Matches.
+        /// </summary>
+        internal static string Matches {
+            get {
+                return ResourceManager.GetString("Matches", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Move To Favorites.
+        /// </summary>
+        internal static string MoveToFavorites {
+            get {
+                return ResourceManager.GetString("MoveToFavorites", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number.
+        /// </summary>
+        internal static string Number {
+            get {
+                return ResourceManager.GetString("Number", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Player Position.
+        /// </summary>
+        internal static string PlayerPosition {
+            get {
+                return ResourceManager.GetString("PlayerPosition", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Print.
+        /// </summary>
+        internal static string Print {
+            get {
+                return ResourceManager.GetString("Print", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Print Statistics.
+        /// </summary>
+        internal static string PrintStatistics {
+            get {
+                return ResourceManager.GetString("PrintStatistics", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Remove From Favorites.
+        /// </summary>
+        internal static string RemoveFromFavorites {
+            get {
+                return ResourceManager.GetString("RemoveFromFavorites", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Select.
+        /// </summary>
+        internal static string Select {
+            get {
+                return ResourceManager.GetString("Select", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Set Player Image.
+        /// </summary>
+        internal static string SetPlayerImage {
+            get {
+                return ResourceManager.GetString("SetPlayerImage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Settings.
+        /// </summary>
+        internal static string Settings {
+            get {
+                return ResourceManager.GetString("Settings", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Top Scorers.
+        /// </summary>
+        internal static string TopScorers {
+            get {
+                return ResourceManager.GetString("TopScorers", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Yellow Cards.
+        /// </summary>
+        internal static string YellowCards {
+            get {
+                return ResourceManager.GetString("YellowCards", resourceCulture);
+            }
+        }
     }
 }

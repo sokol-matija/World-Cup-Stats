@@ -14,11 +14,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="String.hr.Designer.cs">
-      <DesignTime>True</DesignTime>
-      <AutoGen>True</AutoGen>
-      <DependentUpon>String.hr.resx</DependentUpon>
-    </Compile>
     <Compile Update="Strings.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
@@ -27,10 +22,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="String.hr.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>String.hr.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
     <EmbeddedResource Update="Strings.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Strings.Designer.cs</LastGenOutput>
