@@ -51,7 +51,7 @@ namespace DataLayer.Managers
 
 		public static string GetPlayerImagePath(string playerName)
 		{
-			string imagePath = Path.Combine(_assetsPath, "images", $"{playerName}.jpg");
+			string imagePath = Path.Combine(_assetsPath, "Images", $"{playerName}.png");
 			return File.Exists(imagePath) ? imagePath : Path.Combine(_assetsPath, "images", "default_player.jpg");
 		}
 	}

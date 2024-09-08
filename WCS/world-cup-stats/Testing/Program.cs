@@ -101,5 +101,9 @@ class Testing
 		string playerName = "Messi";
 		string imagePath = imageManager.GetPlayerImagePath(playerName);
 		Console.WriteLine($"Image path for {playerName}: {imagePath}");
+
+		string playerName2 = "Danijel SUBASIC";
+		string imagePath2 = imageManager.GetPlayerImagePath(playerName2);
+		Console.WriteLine($"Image path for {playerName2}: {imagePath2}");
 	}
 }
